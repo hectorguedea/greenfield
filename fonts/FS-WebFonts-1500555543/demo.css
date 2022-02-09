@@ -1,0 +1,10 @@
+
+    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=b8236e28-924f-4995-a87e-6a35383d5043&fontids=1475956,1475968");
+    @font-face{
+        font-family:"Univers LT W01_55 Roman1475956";
+        src:url("Fonts/1475956/5c8d59c2-9c85-4a22-88e3-bf3fba01dcd8.woff2") format("woff2"),url("Fonts/1475956/fc51d03b-0d7d-45df-9415-3c6270c80749.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Univers LT W01_65 Bold1475968";
+        src:url("Fonts/1475968/8a711a0d-3f17-4bfe-887b-6229858332b3.woff2") format("woff2"),url("Fonts/1475968/05a79c4b-9e9d-46e4-9d4b-610be05371c4.woff") format("woff");
+    }

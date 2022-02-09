@@ -1,0 +1,207 @@
+
+.contacto {
+    margin-top: 75px;
+}
+
+.contacto-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20%;
+}
+
+.contacto-izq h1 {
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: -0.004em;
+    color: #506953;
+    width: 342px;
+    margin-bottom: 50px;
+}
+
+.contacto-izq button {
+    width: 342px;
+    height: 60px;
+    background: #506953;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.003em;
+    color: #D4CDBD;
+    border: none;
+    padding-left: 28px;
+    transition: all ease 0.5s;
+}
+
+.contacto-izq button:hover {
+    transform: scale(1.1);
+}
+
+
+.contacto-izq a {
+    font-family:"Univers LT W01_65 Bold1475968";
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.002em;
+    text-decoration-line: underline;
+    color: #506953;
+    margin-top: 25px;
+}
+
+.contacto-izq .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contacto-izq .redes a {
+    font-family: "Univers LT W01_55 Roman1475956";
+}
+
+
+
+.contacto-izq .redes a:nth-child(2) {
+    margin-left: 32px;
+}   
+
+
+.formulario {
+    width: 80%;
+    border: 1px solid #506953;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 586px;
+    height: 586px;
+    margin-bottom: 100px;
+}
+
+
+.formulario form label {
+    margin-left: 10%;
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+.formulario form input, .formulario form textarea {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8px;
+    border: 1px solid #506953;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: #D4CDBD;
+    height: 56px;
+}
+
+.formulario form .submit {
+    width: 170px;
+    height: 60px;
+    left: 1098px;
+    top: 619px;
+    background: #506953;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.003em;
+    color: #D4CDBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 50px;
+    padding-top: 5px;
+    transition: all ease 0.5s;
+}
+
+.formulario form .submit:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1240px) {
+
+    .formulario {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacto-izq {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 748px) {
+
+    .contacto-izq {
+        margin-left: 8%;
+    }
+
+    .formulario {
+        width: 95%;
+    }
+
+    .contacto-izq h1 {
+        font-size: 32px;
+    }
+    
+    .contacto-izq button {
+        width: 273px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .contacto-izq a {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .contacto-izq {
+        margin-left: 10%;
+    }
+
+    .contacto-izq h1 {
+        font-size: 45px;
+        line-height: 120%;
+        letter-spacing: -0.004em;
+        color: #506953;
+        width: 342px;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+
+    .formulario {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .contacto-izq {
+        margin-left: 5%;
+    }
+
+    .formulario {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+

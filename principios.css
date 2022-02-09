@@ -1,0 +1,114 @@
+header h1 {
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: -0.004em;
+    color: #506953;
+    margin-left: 10%;
+    margin-top: 124px;
+}
+
+header p {
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.003em;
+    color: #161616;
+    margin-left: 10%;
+    width: 50%;
+}
+
+.principios {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.principio {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    width: 60%;
+    margin-top: 75px;
+}
+
+.principio h6 {
+    font-family:"Univers LT W01_65 Bold1475968";
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: -0.004em;
+    color: #506953;
+}
+
+.principio p {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.003em;
+    color: #161616;
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 900px) {
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header p {
+        font-size: 28px;
+    }
+
+    .principio h6 {
+        font-size: 38px;
+    }
+    
+    .principio p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width: 748px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 24px;
+    }
+
+    .principio h6 {
+        font-size: 32px;
+    }
+    
+    .principio p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    header p {
+        font-size: 16px;
+        width: 75%;
+        margin-top: 25px;
+    }
+
+    .principio {
+        width: 85%;
+        margin-top: 30px;
+    }
+
+    .principio h6 {
+        font-size: 20px;
+    }
+    
+    .principio p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,1133 @@
+/* @font-face {
+    font-family: UniverseLTPro;
+    src: url(./fonts/UniversLTPro55Roman.ttf);
+} */
+
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=b8236e28-924f-4995-a87e-6a35383d5043&fontids=1475956,1475968");
+@font-face{
+    font-family:"Univers LT W01_55 Roman1475956";
+    src:url("fonts/1475956/5c8d59c2-9c85-4a22-88e3-bf3fba01dcd8.woff2") format("woff2"),url("fonts/1475956/fc51d03b-0d7d-45df-9415-3c6270c80749.woff") format("woff");
+}
+@font-face{
+    font-family:"Univers LT W01_65 Bold1475968";
+    src:url("fonts/1475968/8a711a0d-3f17-4bfe-887b-6229858332b3.woff2") format("woff2"),url("fonts/1475968/05a79c4b-9e9d-46e4-9d4b-610be05371c4.woff") format("woff");
+}
+
+
+body {
+    margin: 0 auto;
+    background-color: #D4CDBD;
+    font-family: "Univers LT W01_55 Roman1475956";
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 120px 19px 120px;
+}
+
+nav a {
+    z-index: 5;
+}
+
+nav img {
+    width: 149.67px;
+    height: 18px;
+    z-index: 5;
+}
+
+.nav-link {
+    color: #000000;
+    font-size: 16px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #506953;
+}
+
+.active {
+    color: #506953 !important;
+}
+
+.hamburger {
+    width: 30px;
+    display: none;
+    z-index: 5;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 2px;
+    background: #506953;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: -0.004em;
+    color: #506953;
+    margin-left: 122px;
+    margin-top: 105px;
+}
+
+/* Section Principios */
+
+.carousel {
+    margin-top: 122px;
+}
+
+.carousel-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34%;
+    left: 15.5%;
+    margin: 0 auto;
+}
+
+.carousel-caption h5 {
+    font-family:"Univers LT W01_65 Bold1475968";
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.004em;
+    color: #D4CDBD;
+}
+
+.carousel-caption p {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.003em;
+    color: #D4CDBD;
+    text-align: justify;
+}
+
+.separador {
+    width: 100%;
+    height: 30px;
+    background-color: #506953;
+}
+
+
+/* Section Reconocimientos */
+
+
+.reconocimientos_title {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.003em;
+    color: #161616;
+    width: 48%;
+    margin-left: 122px;
+    margin-top: 120px;
+}
+
+.logros_container {
+    margin-top: 60px;
+}
+
+.logros__contacto {
+    padding-left: 122px;
+    padding-right: 183px;
+    padding-top: 10px;
+}
+
+.logros__contacto p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.002em;
+    color: #161616;
+}
+
+.logros__logos img {
+    width: 98px;
+    height: 106px;
+    padding: 10px;
+}
+
+.logros__contacto button {
+    background: #506953;
+    border-radius: 8px;
+    width: 176px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.003em;
+    color: #D4CDBD;
+    margin-top: 20px;
+    transition: all ease 0.5s;
+    border: none;
+}
+
+.logros_container .button-mobile {
+    background: #506953;
+    border-radius: 8px;
+    width: 158px;
+    height: 36px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.003em;
+    color: #D4CDBD;
+    margin-top: 20px;
+    transition: all ease 0.5s;
+    border: none;
+    display: none;
+    margin-left: 10%;
+}
+
+.logros__contacto button:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* Main Content Section */
+
+#main-accordion {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.accordion-item {
+    border: none;
+}
+
+
+.accordion-button {
+    background-color: #D4CDBD;
+    border-bottom: #506953 solid 4px;
+    border-top: none;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.003em;
+    font-family: UniverseLTPro;
+    color: #506953;
+    box-shadow: none;
+    padding: 80px 0 0 0;
+    box-shadow: none;
+    font-family: "Univers LT W01_55 Roman1475956";
+}
+
+
+.accordion-button:focus {
+    border-color: #506953;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #506953;
+    background-color: #D4CDBD;
+}
+
+.accordion-item {
+    background-color: #D4CDBD;
+}
+
+.accordion-button::after {
+    background-image: url('assets/plus.png');
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('assets/minus.png');
+}
+
+.accordion-body {
+    padding: 25px 0 0 0;
+}
+
+.main-content {
+    margin-top: -100px;
+}
+
+/* Footer Section */
+
+.footer-desktop {
+    width: 100%;
+    height: 120px;
+    background-color: #506953;
+    display: block;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+footer p, a {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(212, 205, 189);
+    transition: all ease 0.5s;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+footer a:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    color: rgb(212, 205, 189);
+}
+
+
+footer p:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 129px 0 122px;
+}
+
+.footer-links .footer_redes {
+    display: flex;
+    flex-direction: row;
+    width: 14%;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* Vision Section */
+
+.vision {
+    position: relative;
+}
+
+.vision-der img {
+    width: 100%;
+}
+
+.vision-izq p {
+    width: 75%;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #161616;
+}
+
+.vision-izq img {
+    width: 342px;
+    height: 181px;
+}
+
+.vision-izq h6 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;  
+    color: #506953;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+}
+
+
+/* Nuestros Servicios Section */
+
+#servicios-accordion .accordion-button {
+    border-bottom: #506953 solid 2px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 75px 0 0 0;
+}
+
+#servicios-accordion .accordion-button::after {
+    background-image: url('assets/plus.png');
+    background-size: 11px;
+}
+
+#servicios-accordion .accordion-button:not(.collapsed)::after {
+    background-image: url('assets/minus.png');
+    background-size: 11px;
+}
+
+#servicios-accordion #servicios__headingOne .accordion-button {
+    padding-top: 50px;
+}
+
+.servicios-images {
+    width: 115%;
+}
+
+.proyectos img:nth-child(1) {
+    display: block;
+}
+
+.proyectos img:nth-child(2) {
+    display: none;
+}
+
+.servicios__socios-desarrollo {
+    width: 65%;
+    margin-left: 35%
+}
+
+.servicios-texto, .servicios-lista li {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #161616;
+}
+.servicios-small {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #506953;
+}
+
+.proyectos .servicios-images {
+    width: 100%;
+}
+
+.proyectos .servicios-texto {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #161616;
+    width: 80%;
+}
+
+.nido .servicios-images {
+    width: 115%;
+}
+
+.nido .servicios-texto {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #161616;
+    width: 65%;
+    margin-left: 35%;
+}
+
+
+
+
+/* Publicaciones Section */
+
+.publicaciones_logos p {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #161616;
+    width: 75%;
+}
+
+.publicaciones__logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.publicaciones__logos img {
+    width: 98px;
+    margin-right: 24px;
+    margin-top: 25px;
+}
+
+.publicaciones-image {
+    width: 100%;
+}
+
+
+/* Certificaciones Section */
+
+.certificaciones-image {
+    width: 100%;
+}
+
+.certificaciones-certificacion {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+
+.certificaciones-certificacion img:nth-child(1) {
+    width: 70px;
+}
+
+.certificaciones-certificacion img:nth-child(2) {
+    width: 88px;
+}
+
+.certificaciones-certificacion img:nth-child(3) {
+    width: 82px;
+}
+
+
+.certificaciones-certificacion p {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.002em;
+    color: #161616;
+    padding-left: 38px;
+}
+
+
+
+/* ******************* RESPONSIVE DESING ****************************************************************************************** */
+
+
+@media screen and (max-width: 1240px) {
+    
+    .vision-izq p {
+        font-size: 15px;
+        line-height: 140%;
+    }
+    
+    .vision-izq img {
+        width: 256px;
+        height: 136px;
+    }
+    
+    .vision-izq h6 {
+        font-size: 20px;
+        line-height: 130%;  
+    }
+
+
+    .certificaciones-certificacion img:nth-child(1) {
+        width: 52.5px;
+    }
+    
+    .certificaciones-certificacion img:nth-child(2) {
+        width: 66px;
+    }
+    
+    .certificaciones-certificacion img:nth-child(3) {
+        width: 62px;
+    }
+
+    .certificaciones-certificacion p {
+        font-size: 15px;
+        line-height: 140%;
+
+    }
+    .footer-links .footer_redes {
+        width: 16%;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .slogan {
+        font-size: 35px;
+        line-height: 120%;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 20px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .reconocimientos_title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .logros__contacto {
+        padding-left: 122px;
+        padding-right: 80px;
+        padding-top: 10px;
+    }
+
+    .logros__contacto p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .logros__logos img {
+        width: 74px;
+        height: 80px;
+    }
+
+    .vision-izq p {
+        width: 85%;
+    }
+    
+    .vision-izq img {
+        width: 205px;
+        height: 109px;
+    }
+    
+    .vision-izq h6 {
+        font-size: 18px;
+    }
+
+    .servicios-texto, .servicios-lista li {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .servicios-small {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .proyectos .servicios-texto {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .nido .servicios-texto {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .publicaciones_logos p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    
+    
+    .publicaciones__logos img {
+        width: 75px;
+        margin-right: 18px;
+        margin-top: 18px;
+    }
+
+    .certificaciones-certificacion {
+         width: 75%;
+    }
+
+    .certificaciones-certificacion img:nth-child(1) {
+        width: 47px;
+    }
+    
+    .certificaciones-certificacion img:nth-child(2) {
+        width: 60px;
+    }
+    
+    .certificaciones-certificacion img:nth-child(3) {
+        width: 55px;
+    }
+
+    .certificaciones-certificacion p {
+        font-size: 14px;
+        line-height: 140%;
+        width: 100%;
+    }
+
+    .footer-links .footer_redes {
+        width: 20%;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .slogan {
+        font-size: 30px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 18px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 30px;
+    }
+
+    .vision-izq p {
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    .vision-izq img {
+        width: 164px;
+        height: 87px;
+    }
+    
+    .vision-izq h6 {
+        font-size: 16px;
+    }
+
+    .footer-links .footer_redes {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 748px) {
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .nav-link {
+        padding: 8px;
+    }
+
+    .slogan {
+        font-size: 24px;
+    }
+
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 16px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 24px;
+    }
+
+    .reconocimientos_title {
+        font-size: 20px;
+    }
+
+    .logros__contacto {
+        padding-left: 122px;
+        padding-right: 60px;
+        padding-top: 10px;
+    }
+
+    .logros__contacto p {
+        font-size: 14px;
+    }
+
+    .logros__logos img {
+        width: 66px;
+        height: 72px;
+    }
+
+    .logros__contacto button {
+        width: 140px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .vision-izq p {
+        width: 100%;
+    }
+    
+    .vision-izq img {
+        width: 123px;
+        height: 52px;
+    }
+    
+    .vision-izq h6 {
+        font-size: 14px;
+    }
+
+    .servicios-texto,
+    .servicios-lista li, 
+    .servicios-small, 
+    .proyectos .servicios-texto,
+    .nido .servicios-texto {
+        font-size: 14px;
+    }
+
+    .publicaciones_logos p {
+        font-size: 14px;
+    }
+    
+    
+    .publicaciones__logos img {
+        width: 60px;
+        margin-right: 14px;
+        margin-top: 14px;
+    }
+
+    .certificaciones-certificacion {
+        width: 90%;
+        margin-bottom: 17px;
+   }
+
+   .certificaciones-certificacion p {
+       font-size: 14px;
+   }
+
+   .certificaciones-certificacion img:nth-child(1) {
+       width: 38px;
+   }
+   
+   .certificaciones-certificacion img:nth-child(2) {
+       width: 48px;
+   }
+   
+   .certificaciones-certificacion img:nth-child(3) {
+       width: 44px;
+   }
+
+   .footer-links .footer_redes {
+    width: 28%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Header y Logros */
+
+    nav {
+        padding: 24px 30px 24px 30px;
+    }
+
+    .nav {
+        background-color: #D4CDBD;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: center;
+        padding-top: 120px;
+        /* clip-path: circle(0 at 90% 10%);
+        -webkit-clip-path: circle(0 at 90% 10%);
+        transition: all 1s ease-out;
+        pointer-events: none; */
+        clip-path: circle(100px at 100% -10%);
+        -webkit-clip-path: circle(100px at 100% -10%);
+        transition: all 1s ease-out;
+    }
+
+    .nav.open {
+        clip-path: circle(1100px at 90% -10%) !important;
+        -webkit-clip-path: circle(1100px at 90% -10%) !important;
+        pointer-events: all !important;
+    }
+
+    .nav .nav-item a {
+        font-size: 24px;
+        padding-top: 30px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .slogan {
+        font-size: 24px;
+        line-height: 28px;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+
+    .carousel {
+        margin-top: 50px;
+    }
+
+    .carousel-caption {
+        top: 25%;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    
+    .carousel-caption p {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    .reconocimientos_title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-left: 10%;
+        margin-top: 60px;
+        width: 80%;
+    }
+
+    .logros_container {
+        margin-top: 25px;
+    }
+
+    .logros__contacto {
+        padding: 0;
+        width: 60%;
+        padding-top: 10px;
+        margin-left: 10%;
+    }
+    
+    .logros__contacto p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .logros__logos img {
+        width: 98px;
+        height: 106px;
+        padding: 10px;
+    }
+    
+    .logros__contacto button {
+        display: none;
+    }
+
+    .logros_container .button-mobile {
+        display: block;
+    }
+
+    .logros__logos  {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin-left: 10%;
+    }
+
+    .logros__logos img {
+        transform: scale(0.8);
+    }
+
+    /* Vision Section */
+
+    .accordion-button {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 50px 0 0 0;   
+    }
+
+    .accordion-button::after {
+        background-size: 16px;
+    }
+    
+    .accordion-button:not(.collapsed)::after {
+        background-size: 16px;
+    }
+
+    .vision-der img {
+        margin-top: 20px;
+    }
+
+    .vision-izq p {
+        width: 75%;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: -0.002em;
+        color: #161616;
+    }
+
+    .vision-izq img {
+        width: 214px;
+        height: 115px;
+    }
+
+    .vision-izq h6 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;  
+        color: #506953;
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Publicaciones Section */
+
+    .publicaciones_logos p {
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: -0.002em;
+        color: #161616;
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .publicaciones__logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    /* Certificaciones Section */
+
+
+    .certificaciones-certificacion {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 35px;
+        margin-top: 30px;
+    }
+
+
+    #servicios__collapseOne .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .servicios__socios-desarrollo {
+        margin-left: 0;
+    }
+
+    .servicios-images {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .proyectos img:nth-child(1) {
+        display: none;
+    }
+    
+    .proyectos img:nth-child(2) {
+        display: block;
+    }
+    
+
+    .servicios-texto, 
+    .servicios-lista li, 
+    .servicios-small, .proyectos .servicios-texto, 
+    .nido .servicios-texto {
+        font-size: 16px;
+    }
+
+    .nido .servicios-texto {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 80%;
+    }
+    
+    .nido .servicios-images {
+        width: 100%;
+    }
+
+    #servicios-accordion #servicios__headingOne .accordion-button {
+        padding-top: 20px;
+    }
+
+    #servicios-accordion .accordion-button {
+         font-size: 16px;
+        line-height: 20px;
+        padding: 50px 0 0 0;
+    }
+    
+    /* Footer Section */
+
+    .footer-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        width: 100%;
+        height: 120px;
+        background-color: #506953;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    .footer-mobile .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-mobile .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+
+        /* Header y Logros */
+
+    .slogan {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .carousel-caption {
+        top: 15%;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 14px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 20px;
+    }
+
+    .reconocimientos_title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .logros__logos {
+        margin-left: 15%;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .logros__logos img {
+        transform: scale(.8);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+        /* Header y Logros */
+
+    .carousel-caption {
+        top: 12%;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 13px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .logros__logos img {
+        transform: scale(.7);
+    }
+
+}
+

@@ -1,0 +1,96 @@
+.descarga {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.descarga h1 {
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.004em;
+    color: #506953;
+    margin-top: 100px;
+}
+
+.descarga p, .descarga p a {
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.002em;
+    color: #161616;
+    margin-top: 50px;
+}
+
+.descarga p a  {
+    text-decoration: underline;
+}
+
+.descarga p a:hover {
+    color: #506953
+}
+
+.descarga button {
+    width: 220px;
+    height: 60px;
+    background: #506953;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.003em;
+    color: #D4CDBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding-top: 1px;
+    margin-top: 60px;
+    transition: all ease 0.5s;
+}
+
+.descarga button:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .descarga {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+
+    .descarga h1 {
+        font-size: 24px;
+        width: 75%;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .descarga p, .descarga p a {
+        font-size: 12px;
+        width: 75%;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .descarga button {
+        width: 101px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 12px;
+        margin-top: 15px;
+    }
+
+
+}
