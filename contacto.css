@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 20%;
+    margin-left: 120px;
 }
 
 .contacto-izq h1 {
@@ -27,13 +27,12 @@
     border-radius: 8px;
     font-size: 22px;
     line-height: 26px;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.003em;
     color: #D4CDBD;
     border: none;
     padding-left: 28px;
     transition: all ease 0.5s;
+    padding: 0px;
 }
 
 .contacto-izq button:hover {
@@ -42,25 +41,30 @@
 
 
 .contacto-izq a {
-    font-family:"Univers LT W01_65 Bold1475968";
     font-size: 20px;
     line-height: 140%;
+    font-weight: 700;
     display: flex;
     align-items: center;
     letter-spacing: -0.002em;
     text-decoration-line: underline;
     color: #506953;
     margin-top: 25px;
+    margin-bottom: 0;
 }
 
 .contacto-izq .redes {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 
 .contacto-izq .redes a {
     font-family: "Univers LT W01_55 Roman1475956";
+    font-weight: 700;
+    margin-top: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -76,7 +80,7 @@
     box-sizing: border-box;
     border-radius: 6px;
     width: 586px;
-    height: 586px;
+    height: 720px;
     margin-bottom: 100px;
 }
 
@@ -98,34 +102,62 @@
     border-radius: 6px;
     background: #D4CDBD;
     height: 56px;
+    padding: 5px;
+}
+
+.formulario form input {
+    padding-left: 20px;
+}
+
+.formulario form textarea {
+    padding: 13px 10px 5px 20px;
+}
+
+.submit-container {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .formulario form .submit {
     width: 170px;
     height: 60px;
-    left: 1098px;
-    top: 619px;
     background: #506953;
     border-radius: 8px;
     font-size: 22px;
     line-height: 26px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: -0.003em;
     color: #D4CDBD;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 10%;
     margin-top: 50px;
-    padding-top: 5px;
+    padding: 0px;
     transition: all ease 0.5s;
 }
 
 .formulario form .submit:hover {
     transform: scale(1.1);
+}
+
+.alert {
+   text-align: center;
+   border: none;
+   background-color: transparent;
+   font-family: "Univers LT W01_55 Roman1475956";
+}
+
+.alert-success {
+    color: green;
+    font-size: 12px;
+}
+
+.alert-danger {
+    color: red;
+    font-size: 12px;
+}
+
+.alert-warning {
+    color: red;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 1240px) {
@@ -170,25 +202,72 @@
 
 @media screen and (max-width: 600px) {
 
+    .contacto {
+        margin-top: 50px;
+    }
+
     .contacto-izq {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .contacto-izq h1 {
-        font-size: 45px;
-        line-height: 120%;
-        letter-spacing: -0.004em;
-        color: #506953;
-        width: 342px;
-        margin-bottom: 50px;
-        margin-top: 0;
+        font-size: 24px;
+        line-height: 31.2px;
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    .contacto-izq button {
+        width: 190px;
+        height: 36px;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 19.2px;
+        margin-top: 20px;
+    }
+
+    .contacto-izq a {
+        font-size: 12px;
+        line-height: 19.2px;
     }
 
     .formulario {
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         margin-top: 50px;
+        height: 440px;
     }
+
+    .formulario form label {
+        margin-left: 5%;
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 19.2px;
+        color: #161616;
+    }
+    
+    .formulario form input, .formulario form textarea {
+        width: 90%;
+        margin-left: 5%;
+        height: 40px;
+    }
+
+    .submit-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .formulario form .submit {
+        width: 81px;
+        height: 36px;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 19.2px;
+        margin-top: 20px;
+    }
+    
+
+    
 }
 
 

@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+.contador-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .descarga h1 {
     font-size: 45px;
     line-height: 120%;
@@ -13,6 +18,17 @@
     letter-spacing: -0.004em;
     color: #506953;
     margin-top: 100px;
+}
+
+.descarga h1 .segundero {
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: -0.004em;
+    color: #506953;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    display: inline;
 }
 
 .descarga p, .descarga p a {
@@ -75,6 +91,10 @@
         width: 75%;
         margin-top: 50px;
         text-align: left;
+    }
+
+    .descarga h1 .segundero {
+        font-size: 24px;
     }
     
     .descarga p, .descarga p a {

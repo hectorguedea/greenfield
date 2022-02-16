@@ -26,7 +26,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 19px 120px 19px 120px;
+    padding: 19px 120px 0 120px;
 }
 
 nav a {
@@ -72,13 +72,13 @@ nav img {
     letter-spacing: -0.004em;
     color: #506953;
     margin-left: 122px;
-    margin-top: 105px;
+    margin-top: 80px;
 }
 
 /* Section Principios */
 
 .carousel {
-    margin-top: 122px;
+    margin-top: 80px;
 }
 
 .carousel-caption {
@@ -91,6 +91,18 @@ nav img {
     margin: 0 auto;
 }
 
+.carousel-item {
+    transition: all ease-in 0.8s;
+}
+
+.carousel-item .car-img-desk {
+    display: block;
+}
+
+.carousel-item .car-img-mob{
+    display: none !important;
+}
+
 .carousel-caption h5 {
     font-family:"Univers LT W01_65 Bold1475968";
     font-weight: bold;
@@ -100,6 +112,8 @@ nav img {
     align-items: center;
     letter-spacing: -0.004em;
     color: #D4CDBD;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 600;
 }
 
 .carousel-caption p {
@@ -107,7 +121,16 @@ nav img {
     line-height: 42px;
     letter-spacing: -0.003em;
     color: #D4CDBD;
-    text-align: justify;
+    text-align: left;
+    white-space: pre;
+}
+
+.principio-text {
+    display: block;
+}
+
+.principio-text-mob {
+    display: none;
 }
 
 .separador {
@@ -147,11 +170,32 @@ nav img {
     color: #161616;
 }
 
+.logros__logos {
+    display: block;
+}
+
 .logros__logos img {
     width: 98px;
     height: 106px;
     padding: 10px;
 }
+
+.logros__logos-mobile {
+    display: none;
+
+}
+
+.logros_logos-mobile img {
+   width: 101px;
+   height: 64px;
+   margin-top: 10px;
+   margin-right: 12px;
+}
+
+.logros_logos-mobile img:nth-child(1) {
+    margin-left: 24px;
+}
+
 
 .logros__contacto button {
     background: #506953;
@@ -176,11 +220,13 @@ nav img {
     line-height: 25px;
     letter-spacing: -0.003em;
     color: #D4CDBD;
-    margin-top: 20px;
+    margin-top: 25px;
     transition: all ease 0.5s;
     border: none;
     display: none;
-    margin-left: 10%;
+    margin-left: 24px;
+    padding: 0px;
+    /* text-transform: uppercase; */
 }
 
 .logros__contacto button:hover {
@@ -210,7 +256,7 @@ nav img {
     font-family: UniverseLTPro;
     color: #506953;
     box-shadow: none;
-    padding: 80px 0 0 0;
+    padding: 80px 0 10px 0;
     box-shadow: none;
     font-family: "Univers LT W01_55 Roman1475956";
 }
@@ -265,7 +311,7 @@ footer p, a {
     color: rgb(212, 205, 189);
     transition: all ease 0.5s;
     text-decoration: none;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 footer a:hover {
@@ -317,6 +363,7 @@ footer p:hover {
     line-height: 24px;
     letter-spacing: -0.002em;
     color: #161616;
+    min-width: 280px;
 }
 
 .vision-izq img {
@@ -334,24 +381,29 @@ footer p:hover {
     width: 35%;
 }
 
+.vision-der img:nth-child(1) {
+    display: block;
+}
+
+.vision-der img:nth-child(2) {
+    display: none;
+}
 
 /* Nuestros Servicios Section */
 
 #servicios-accordion .accordion-button {
-    border-bottom: #506953 solid 2px;
+    border-bottom: #506953 solid 3px;
     font-size: 20px;
     line-height: 24px;
-    padding: 75px 0 0 0;
+    padding: 75px 0 10px 0;
 }
 
 #servicios-accordion .accordion-button::after {
     background-image: url('assets/plus.png');
-    background-size: 11px;
 }
 
 #servicios-accordion .accordion-button:not(.collapsed)::after {
     background-image: url('assets/minus.png');
-    background-size: 11px;
 }
 
 #servicios-accordion #servicios__headingOne .accordion-button {
@@ -360,6 +412,7 @@ footer p:hover {
 
 .servicios-images {
     width: 115%;
+
 }
 
 .proyectos img:nth-child(1) {
@@ -424,11 +477,16 @@ footer p:hover {
     letter-spacing: -0.002em;
     color: #161616;
     width: 75%;
+    margin-bottom: 20px;
 }
 
 .publicaciones__logos {
     display: flex;
     flex-direction: row;
+}
+
+.publicaciones__logos-mob {
+    display: none;
 }
 
 .publicaciones__logos img {
@@ -439,23 +497,36 @@ footer p:hover {
 
 .publicaciones-image {
     width: 100%;
+    display: block;
+}
+
+.publicaciones-image-mob {
+    display: none;
 }
 
 
 /* Certificaciones Section */
 
 .certificaciones-image {
-    width: 100%;
+    width: 708px;
 }
+
+/* .certificaciones-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+} */
 
 .certificaciones-certificacion {
     display: flex;
     flex-direction: row;
     width: 60%;
     margin: 0 auto;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 35px;
+    margin-right: 0;
 }
 
 
@@ -500,6 +571,10 @@ footer p:hover {
     .vision-izq h6 {
         font-size: 20px;
         line-height: 130%;  
+    }
+
+    .certificaciones-image {
+        width: 600px;
     }
 
 
@@ -608,6 +683,10 @@ footer p:hover {
         margin-top: 18px;
     }
 
+    .certificaciones-image {
+        width: 480px;
+    }
+
     .certificaciones-certificacion {
          width: 75%;
     }
@@ -667,6 +746,10 @@ footer p:hover {
     
     .vision-izq h6 {
         font-size: 16px;
+    }
+
+    .certificaciones-image {
+        width: 450px;
     }
 
     .footer-links .footer_redes {
@@ -767,7 +850,8 @@ footer p:hover {
    }
 
    .certificaciones-certificacion p {
-       font-size: 14px;
+       font-size: 16px;
+       line-height: 22.4px;
    }
 
    .certificaciones-certificacion img:nth-child(1) {
@@ -788,12 +872,15 @@ footer p:hover {
 
 }
 
+
+/* ******************* MOBILE DESING ******************************************************************************************/
+
 @media screen and (max-width: 600px) {
 
     /* Header y Logros */
 
     nav {
-        padding: 24px 30px 24px 30px;
+        padding: 24px 24px 0 24px;
     }
 
     .nav {
@@ -809,12 +896,8 @@ footer p:hover {
         justify-content: flex-start !important;
         align-items: center;
         padding-top: 120px;
-        /* clip-path: circle(0 at 90% 10%);
-        -webkit-clip-path: circle(0 at 90% 10%);
-        transition: all 1s ease-out;
-        pointer-events: none; */
-        clip-path: circle(100px at 100% -10%);
-        -webkit-clip-path: circle(100px at 100% -10%);
+        clip-path: circle(0 at 100% -10%);
+        -webkit-clip-path: circle(0 at 100% -10%);
         transition: all 1s ease-out;
     }
 
@@ -823,6 +906,8 @@ footer p:hover {
         -webkit-clip-path: circle(1100px at 90% -10%) !important;
         pointer-events: all !important;
     }
+
+    
 
     .nav .nav-item a {
         font-size: 24px;
@@ -837,8 +922,8 @@ footer p:hover {
     .slogan {
         font-size: 24px;
         line-height: 28px;
-        margin-left: 10%;
-        margin-top: 50px;
+        margin-left: 24px;
+        margin-top: 35px;
     }
 
     .carousel {
@@ -846,24 +931,42 @@ footer p:hover {
     }
 
     .carousel-caption {
-        top: 25%;
+        top: 40%;
+    }
+
+    .carousel-item .car-img-desk {
+        display: none !important;
     }
     
-    .carousel-caption h5 {
+    .carousel-item .car-img-mob {
+        display: block !important;
+        width: 100%;
+    }
+    
+    .carousel-item .carousel-caption h5 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 10px;
+    }
+    
+    .carousel-item .carousel-caption p {
         font-size: 22px;
-        line-height: 32px;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+
+    .principio-text {
+        display: none;
     }
     
-    .carousel-caption p {
-        font-size: 32px;
-        line-height: 40px;
-        text-align: left;
+    .principio-text-mob {
+        display: block;
     }
 
     .reconocimientos_title {
         font-size: 20px;
         line-height: 28px;
-        margin-left: 10%;
+        margin-left: 24px;
         margin-top: 60px;
         width: 80%;
     }
@@ -874,22 +977,33 @@ footer p:hover {
 
     .logros__contacto {
         padding: 0;
-        width: 60%;
+        width: 70%;
         padding-top: 10px;
-        margin-left: 10%;
+        margin-left: 24px;
     }
     
     .logros__contacto p {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 22.4px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .logros__logos {
+        display: none;
     }
     
     .logros__logos img {
-        width: 98px;
-        height: 106px;
+        width: 100px;
+        height: 64px;
         padding: 10px;
     }
-    
+
+    .logros__logos-mobile {
+        display: block;
+    }
+
+   
     .logros__contacto button {
         display: none;
     }
@@ -898,33 +1012,42 @@ footer p:hover {
         display: block;
     }
 
-    .logros__logos  {
+    /* .logros__logos  {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: nowrap;
-        margin-left: 10%;
-    }
+        margin-left: 24px;
+    } */
 
-    .logros__logos img {
+    /* .logros__logos img {
         transform: scale(0.8);
-    }
+    } */
 
     /* Vision Section */
+
+
+    #main-accordion {
+        width: 92%;
+        margin-left: 24px;
+        margin-bottom: 50px;
+    }
+    
 
     .accordion-button {
         font-size: 20px;
         line-height: 26px;
-        padding: 50px 0 0 0;   
+        padding: 50px 0 10px 0;   
+        border-bottom: #506953 solid 2px;
     }
 
-    .accordion-button::after {
-        background-size: 16px;
+    #servicios-accordion .accordion-button::after {
+        background-image: url('assets/plus-mob.png');
     }
     
-    .accordion-button:not(.collapsed)::after {
-        background-size: 16px;
+    #servicios-accordion .accordion-button:not(.collapsed)::after {
+        background-image: url('assets/minus-mob.png');
     }
 
     .vision-der img {
@@ -942,6 +1065,15 @@ footer p:hover {
     .vision-izq img {
         width: 214px;
         height: 115px;
+    }
+
+    .vision-der img:nth-child(1) {
+        display: none;
+    }
+
+    .vision-der img:nth-child(2) {
+        display: block;
+        min-height: 200px;
     }
 
     .vision-izq h6 {
@@ -962,16 +1094,37 @@ footer p:hover {
         letter-spacing: -0.002em;
         color: #161616;
         width: 80%;
-        margin-left: 5%;
     }
 
     .publicaciones__logos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
+        display: none;
     }
+    
+    .publicaciones__logos-mob {
+        display: block;
+    }
+
+    .publicaciones__logos-mob img {
+        width: 100px;
+        margin-bottom: 10px;
+        margin-left: 24px;
+    }
+
+    .publicaciones-image {
+        display: none;
+    }
+    
+    .publicaciones-image-mob {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        max-height: 200px;
+    }
+    
+
+    /* .publicaciones__logos-mob img:nth-child(1) {
+        margin-left: 24px;
+    } */
 
     /* Certificaciones Section */
 
@@ -987,6 +1140,25 @@ footer p:hover {
         margin-top: 30px;
     }
 
+    .certificaciones-certificacion:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .certificaciones-image {
+        width: 100%;
+    }
+
+    .certificaciones-certificacion p {
+        font-size: 16px;
+        line-height: 22.4px;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+ 
+    .certificaciones-certificacion img:nth-child(1) {
+        width: 45px;
+    }
+    
 
     #servicios__collapseOne .row {
         display: flex;
@@ -1000,6 +1172,7 @@ footer p:hover {
     .servicios-images {
         width: 100%;
         margin-top: 20px;
+        min-height: 200px;
     }
 
     .proyectos img:nth-child(1) {
@@ -1016,6 +1189,8 @@ footer p:hover {
     .servicios-small, .proyectos .servicios-texto, 
     .nido .servicios-texto {
         font-size: 16px;
+        line-height: 22.4px;
+        min-width: 270px;
     }
 
     .nido .servicios-texto {
@@ -1026,6 +1201,7 @@ footer p:hover {
     
     .nido .servicios-images {
         width: 100%;
+        margin-top: -5px;
     }
 
     #servicios-accordion #servicios__headingOne .accordion-button {
@@ -1033,9 +1209,10 @@ footer p:hover {
     }
 
     #servicios-accordion .accordion-button {
-         font-size: 16px;
+        font-size: 18px;
         line-height: 20px;
-        padding: 50px 0 0 0;
+        padding: 50px 0 6px 0;
+        border-bottom: 1px solid #506953;
     }
     
     /* Footer Section */
@@ -1081,53 +1258,59 @@ footer p:hover {
     }
 
     .carousel-caption {
-        top: 15%;
+        top: 40%;
     }
 
+
     .carousel-item .carousel-caption h5 {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .carousel-item .carousel-caption p {
-        font-size: 20px;
-    }
-
-    .reconocimientos_title {
         font-size: 18px;
-        line-height: 26px;
+        line-height: 24px;
     }
 
-    .logros__logos {
+    #main-accordion {
+        width: 90%;
+    }
+
+    .publicaciones__logos-mob img {
+        margin-left: 12px;
+    }
+
+    /* .logros__logos {
         margin-left: 15%;
         flex-wrap: wrap;
         width: 80%;
-    }
+    } */
 
-    .logros__logos img {
+    /* .logros__logos img {
         transform: scale(.8);
-    }
+    } */
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
 
         /* Header y Logros */
 
     .carousel-caption {
-        top: 12%;
+        top: 37%;
     }
 
-    .carousel-item .carousel-caption h5 {
-        font-size: 13px;
+    .publicaciones__logos-mob img {
+        margin-left: 4px;
     }
 
-    .carousel-item .carousel-caption p {
-        font-size: 16px;
+    #main-accordion {
+        width: 87%;
     }
 
-    .logros__logos img {
+    /* .logros__logos img {
         transform: scale(.7);
-    }
+    } */
 
 }
 
