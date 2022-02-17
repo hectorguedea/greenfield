@@ -180,7 +180,7 @@ nav img {
     padding: 10px;
 }
 
-.logros__logos-mobile {
+.logros_logos-mobile {
     display: none;
 
 }
@@ -999,7 +999,7 @@ footer p:hover {
         padding: 10px;
     }
 
-    .logros__logos-mobile {
+    .logros_logos-mobile {
         display: block;
     }
 
