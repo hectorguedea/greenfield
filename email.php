@@ -33,7 +33,7 @@ $headers .= 'From: Dassaev Novela <dassaev86@gmail.com>' . "\r\n";
 $success = mail($to, $subject, $message, $headers);
 
 if (!$success) {
-    echo "<div class='alert alert-danger'>Hubo un error al mandar la información.</div>";
+    echo "<div class='alert alert-danger'>Hubo un error al mandar la información. Por favor envía un correo a ventas@greenfield.com.mx</div>";
 } else {
     echo "<div class='alert alert-success'>¡Gracias por contactarnos! Tu información se mandó correctamente.</div>";
 }
