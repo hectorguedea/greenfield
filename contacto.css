@@ -1,6 +1,13 @@
+html, body {
+    height: 100%;
+}
+
 
 .contacto {
     margin-top: 75px;
+    margin-bottom: -120px;
+    min-height: 100%;
+    position: relative;
 }
 
 .contacto-izq {
@@ -16,11 +23,13 @@
     line-height: 120%;
     letter-spacing: -0.004em;
     color: #506953;
-    width: 342px;
+    width: 85%;
     margin-bottom: 50px;
+    border-bottom: 3px solid #506953;
+    padding-bottom: 20px;
 }
 
-.contacto-izq button {
+/* .contacto-izq button {
     width: 342px;
     height: 60px;
     background: #506953;
@@ -37,10 +46,10 @@
 
 .contacto-izq button:hover {
     transform: scale(1.1);
-}
+} */
 
 
-.contacto-izq a {
+/* .contacto-izq a {
     font-size: 20px;
     line-height: 140%;
     font-weight: 700;
@@ -51,9 +60,9 @@
     color: #506953;
     margin-top: 25px;
     margin-bottom: 0;
-}
+} */
 
-.contacto-izq .redes {
+/* .contacto-info .redes {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -65,13 +74,72 @@
     font-weight: 700;
     margin-top: 20px;
     box-sizing: border-box;
+} */
+
+
+
+/* .contacto-izq .redes a:nth-child(2) {
+    margin-left: 32px;
+}    */
+
+.contacto-info {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.contacto-info div {
+    display: flex;
+    flex-direction: column;
+}
 
+.contacto-info .correo {
+    width: 40%;
+}
 
-.contacto-izq .redes a:nth-child(2) {
-    margin-left: 32px;
-}   
+.contacto-info .telefono {
+    width: 35%;
+    padding-left: 60px;
+}
+
+.contacto-info .redes {
+    width: 25%;
+    padding-left: 30px;
+}
+
+.contacto-info .direccion {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.direccion-mob {
+    display: none !important;
+}
+
+.direccion-desk {
+    display: block !important;
+}
+
+.contacto-info p {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.003em;
+    color: #161616;
+}
+
+.contacto-info a {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.003em;
+    text-decoration-line: underline;
+    color: #506953;
+}
+
+.contacto-info .redes a {
+    margin-bottom: 17px;
+}
 
 
 .formulario {
@@ -79,30 +147,46 @@
     border: 1px solid #506953;
     box-sizing: border-box;
     border-radius: 6px;
-    width: 586px;
-    height: 720px;
+    height: auto;
     margin-bottom: 100px;
 }
 
 
+.formulario h1 {
+    font-size: 22px;
+    line-height: 42px;
+    letter-spacing: -0.003em;
+    color: #506953;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+
+
 .formulario form label {
-    margin-left: 10%;
-    margin-top: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
     font-size: 18px;
     line-height: 22px;
     color: #161616;
 }
 
 .formulario form input, .formulario form textarea {
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 30px;
     margin-top: 8px;
     border: 1px solid #506953;
     box-sizing: border-box;
     border-radius: 6px;
     background: #D4CDBD;
-    height: 56px;
+    height: 40px;
     padding: 5px;
+}
+
+.formulario form textarea {
+    height: 105px;
+    resize: none;
 }
 
 .formulario form input {
@@ -121,17 +205,18 @@
 }
 
 .formulario form .submit {
-    width: 170px;
-    height: 60px;
+    width: 122px;
+    height: 44px;
     background: #506953;
     border-radius: 8px;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 16.8px;
     letter-spacing: -0.003em;
     color: #D4CDBD;
     margin-top: 50px;
     padding: 0px;
     transition: all ease 0.5s;
+    margin-bottom: 30px;
 }
 
 .formulario form .submit:hover {
@@ -143,6 +228,7 @@
    border: none;
    background-color: transparent;
    font-family: "Univers LT W01_55 Roman1475956";
+   margin-bottom: 10px;
 }
 
 .alert-success {
@@ -160,11 +246,61 @@
     font-size: 14px;
 }
 
+.footer-desktop, .push{
+    margin-top: 120px;
+  }
+
+
+  @media screen and (max-width: 1350px) {
+    
+    
+    .contacto-info .redes {
+        padding-left: 20px;
+    }
+    
+
+  }
+
 @media screen and (max-width: 1240px) {
 
     .formulario {
         width: 90%;
     }
+
+    .contacto-info {
+        /* justify-content: ; */
+        align-items: flex-start;
+    }
+
+    .contacto-info .correo {
+        width: 50%;
+        padding-left: 0;
+    }
+    
+    .contacto-info .telefono {
+        width: 50%;
+        padding-left: 70px;
+    }
+    
+    .contacto-info .redes {
+        width: 50%;
+        margin-top: 60px;
+        padding-left: 70px;
+    }
+    
+    .contacto-info .direccion {
+        width: 50%;
+        margin-top: 60px;
+    }
+
+    .direccion-mob {
+        display: block !important;
+    }
+
+    .direccion-desk {
+        display: none !important;
+    }
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -213,8 +349,17 @@
     .contacto-izq h1 {
         font-size: 24px;
         line-height: 31.2px;
-        width: 60%;
-        margin-bottom: 0;
+        width: 95%;
+        padding-bottom: 16px;
+        margin-bottom: 20px;
+     }
+
+     .contacto-info .redes {
+        margin-top: 40px;
+    }
+    
+    .contacto-info .direccion {
+        margin-top: 40px;
     }
 
     .contacto-izq button {
@@ -235,9 +380,17 @@
         width: 90%;
         margin-left: 5%;
         margin-top: 50px;
-        padding-bottom: 30px;
+        padding-bottom: 0;
         height: auto;
     }
+
+    .formulario h1 {
+        font-size: 18px;
+        line-height: 21.6px;
+        margin-left: 5%;
+        margin-bottom: 0;
+    }
+
 
     .formulario form label {
         margin-left: 5%;
@@ -250,11 +403,12 @@
     .formulario form input, .formulario form textarea {
         width: 90%;
         margin-left: 5%;
-        height: 40px;
+        height: 35px;
     }
 
     .formulario form textarea {
         padding-top: 5px;
+        height: 105px;
     }
 
     .submit-container {
@@ -271,10 +425,10 @@
         margin-top: 20px;
     }
 
-    .alert {
+    /* .alert {
         margin-bottom: 0;
         padding-bottom: 0;
-    }
+    } */
 
     .alert-success {
         color: green;
@@ -306,6 +460,18 @@
         width: 90%;
         margin-left: 5%;
     }
+}
+
+@media screen and (max-width: 380px) {
+
+    .contacto-info .telefono {
+        padding-left: 50px;
+    }
+    
+    .contacto-info .redes {
+        padding-left: 50px;
+    }
+
 }
 
 
