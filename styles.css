@@ -91,6 +91,13 @@ nav img {
     margin: 0 auto;
 }
 
+.principio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .carousel-item {
     transition: all ease-in 0.8s;
 }
@@ -103,11 +110,21 @@ nav img {
     display: none !important;
 }
 
-.carousel-caption h5 {
-    font-family:"Univers LT W01_65 Bold1475968";
+.carousel-caption h3 {
     font-weight: bold;
     font-size: 22px;
     line-height: 54px;
+    letter-spacing: -0.004em;
+    color: #D4CDBD;
+    font-family: 'Noto Sans Mono', monospace;
+    text-align: left;
+}
+
+.carousel-caption .principio-container h5 {
+    font-family:"Univers LT W01_65 Bold1475968";
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 41.6px;
     display: flex;
     align-items: center;
     letter-spacing: -0.004em;
@@ -116,22 +133,22 @@ nav img {
     font-weight: 600;
 }
 
-.carousel-caption p {
+.carousel-caption .principio-container p {
     font-size: 40px;
     line-height: 42px;
     letter-spacing: -0.003em;
     color: #D4CDBD;
     text-align: left;
-    white-space: pre;
+    margin-left: 25px;
 }
 
-.principio-text {
+/* .principio-text {
     display: block;
 }
 
 .principio-text-mob {
     display: none;
-}
+} */
 
 .separador {
     width: 100%;
@@ -199,25 +216,25 @@ nav img {
 
 .logros__contacto button {
     background: #506953;
-    border-radius: 8px;
-    width: 176px;
-    height: 60px;
-    font-size: 22px;
-    line-height: 26px;
+    width: 162px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 16.8px;
     letter-spacing: -0.003em;
     color: #D4CDBD;
     margin-top: 20px;
     transition: all ease 0.5s;
     border: none;
+    /* padding: 0 44px 0 44px; */
 }
 
 .logros_container .button-mobile {
     background: #506953;
-    border-radius: 8px;
-    width: 158px;
+    border-radius: 0px;
+    width: 131px;
     height: 36px;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 11px;
+    line-height: 13.2px;
     letter-spacing: -0.003em;
     color: #D4CDBD;
     margin-top: 25px;
@@ -226,7 +243,6 @@ nav img {
     display: none;
     margin-left: 24px;
     padding: 0px;
-    /* text-transform: uppercase; */
 }
 
 .logros__contacto button:hover {
@@ -240,6 +256,11 @@ nav img {
     width: 83%;
     margin: 100px auto;
     margin-left: 122px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .accordion-item {
@@ -279,10 +300,16 @@ nav img {
 
 .accordion-button::after {
     background-image: url('assets/plus.png');
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url('assets/minus.png');
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 .accordion-body {
@@ -367,8 +394,7 @@ footer p:hover {
 }
 
 .vision-izq img {
-    width: 342px;
-    height: 181px;
+    width: 288px;
 }
 
 .vision-izq h6 {
@@ -399,11 +425,17 @@ footer p:hover {
 }
 
 #servicios-accordion .accordion-button::after {
-    background-image: url('assets/plus.png');
+    background-image: url('assets/plus2.png');
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 #servicios-accordion .accordion-button:not(.collapsed)::after {
-    background-image: url('assets/minus.png');
+    background-image: url('assets/minus2.png');
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 #servicios-accordion #servicios__headingOne .accordion-button {
@@ -564,8 +596,7 @@ footer p:hover {
     }
     
     .vision-izq img {
-        width: 256px;
-        height: 136px;
+        width: 216px;
     }
     
     .vision-izq h6 {
@@ -610,7 +641,7 @@ footer p:hover {
     }
 
     .carousel-item .carousel-caption h5 {
-        font-size: 20px;
+        font-size: 32px;
     }
 
     .carousel-item .carousel-caption p {
@@ -644,8 +675,7 @@ footer p:hover {
     }
     
     .vision-izq img {
-        width: 205px;
-        height: 109px;
+        width: 172px;
     }
     
     .vision-izq h6 {
@@ -727,7 +757,7 @@ footer p:hover {
     }
 
     .carousel-item .carousel-caption h5 {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .carousel-item .carousel-caption p {
@@ -740,8 +770,7 @@ footer p:hover {
     }
     
     .vision-izq img {
-        width: 164px;
-        height: 87px;
+        width: 138px;
     }
     
     .vision-izq h6 {
@@ -779,7 +808,7 @@ footer p:hover {
     }
 
     .carousel-item .carousel-caption h5 {
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .carousel-item .carousel-caption p {
@@ -805,20 +834,19 @@ footer p:hover {
         height: 72px;
     }
 
-    .logros__contacto button {
+    /* .logros__contacto button {
         width: 140px;
         height: 48px;
         font-size: 18px;
         line-height: 24px;
-    }
+    } */
 
     .vision-izq p {
         width: 100%;
     }
     
     .vision-izq img {
-        width: 123px;
-        height: 52px;
+        width: 103px;
     }
     
     .vision-izq h6 {
@@ -942,26 +970,33 @@ footer p:hover {
         display: block !important;
         width: 100%;
     }
+
+    .carousel-caption h3 {
+        font-size: 12px;
+        line-height: 19.2px;
+        margin-left: 10px;
+    }
     
     .carousel-item .carousel-caption h5 {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         margin-left: 10px;
+        padding-top: 2px;
     }
     
     .carousel-item .carousel-caption p {
-        font-size: 22px;
-        line-height: 30px;
-        margin-left: 10px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 12px;
     }
 
-    .principio-text {
+    /* .principio-text {
         display: none;
     }
     
     .principio-text-mob {
         display: block;
-    }
+    } */
 
     .reconocimientos_title {
         font-size: 20px;
@@ -1042,12 +1077,32 @@ footer p:hover {
         border-bottom: #506953 solid 2px;
     }
 
+    .accordion-button::after {
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .accordion-button:not(.collapsed)::after {
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+    }
+    
+   
+
     #servicios-accordion .accordion-button::after {
-        background-image: url('assets/plus-mob.png');
+        background-image: url('assets/plus-mob2.png');
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
     }
     
     #servicios-accordion .accordion-button:not(.collapsed)::after {
-        background-image: url('assets/minus-mob.png');
+        background-image: url('assets/minus-mob2.png');
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
     }
 
     .vision-der img {
@@ -1063,8 +1118,7 @@ footer p:hover {
     }
 
     .vision-izq img {
-        width: 214px;
-        height: 115px;
+        width: 183px;
     }
 
     .vision-der img:nth-child(1) {
@@ -1262,7 +1316,7 @@ footer p:hover {
     }
 
 
-    .carousel-item .carousel-caption h5 {
+    /* .carousel-item .carousel-caption h5 {
         font-size: 12px;
         line-height: 16px;
     }
@@ -1270,7 +1324,7 @@ footer p:hover {
     .carousel-item .carousel-caption p {
         font-size: 18px;
         line-height: 24px;
-    }
+    } */
 
     #main-accordion {
         width: 90%;

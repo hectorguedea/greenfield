@@ -146,7 +146,7 @@ html, body {
     width: 80%;
     border: 1px solid #506953;
     box-sizing: border-box;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     height: auto;
     margin-bottom: 100px;
 }
@@ -178,7 +178,7 @@ html, body {
     margin-top: 8px;
     border: 1px solid #506953;
     box-sizing: border-box;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     background: #D4CDBD;
     height: 40px;
     padding: 5px;
@@ -208,12 +208,12 @@ html, body {
     width: 122px;
     height: 44px;
     background: #506953;
-    border-radius: 8px;
+    border-radius: 0px;
     font-size: 14px;
     line-height: 16.8px;
     letter-spacing: -0.003em;
     color: #D4CDBD;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0px;
     transition: all ease 0.5s;
     margin-bottom: 30px;
@@ -365,7 +365,7 @@ html, body {
     .contacto-izq button {
         width: 190px;
         height: 36px;
-        border-radius: 3px;
+        /* border-radius: 3px; */
         font-size: 12px;
         line-height: 19.2px;
         margin-top: 20px;
@@ -417,11 +417,11 @@ html, body {
     }
 
     .formulario form .submit {
-        width: 81px;
+        width: 99px;
         height: 36px;
-        border-radius: 3px;
-        font-size: 12px;
-        line-height: 19.2px;
+        border-radius: 0px;
+        font-size: 11px;
+        line-height: 13.2px;
         margin-top: 20px;
     }
 
