@@ -1,7 +1,7 @@
 <?php
 
 
-$to = "";
+$to = "ventas@greenfield.com.mx";
 $subject = "Prueba Mensaje de Formulario";
 
 
@@ -18,15 +18,14 @@ $message .= "
  <p><strong>Teléfono:</strong> " . $_POST['phone'] . "</p>
  <p><strong>Message:</strong> " . $_POST['message'] . "</p>";
 
-
-
 $message .= "</body>
 </html>";
 
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-$headers .= 'From: Dassaev Novela <dassaev86@gmail.com>' . "\r\n";
+$headers .= 'From: Greenfield <ventas@greenfield.com.mx>' . "\r\n";
+$headers .= 'Reply-To:'. $_POST['email'] . "\r\n";
+$headers .= 'X-Mailer: PHP/' . phpversion();
 
 // echo "<div>" . $message . "</div>";
 
